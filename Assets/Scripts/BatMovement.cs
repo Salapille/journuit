@@ -1,10 +1,6 @@
-using System.Collections;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class BatMovement : MonoBehaviour
 {
     [SerializeField] private Transform _transform;
     [SerializeField] private Rigidbody2D _rb;

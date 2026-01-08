@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class elevator : MonoBehaviour
+public class Elevator : MonoBehaviour
 {
     [SerializeField] private float maxHight;
     [SerializeField] private float lowerPoint;
@@ -19,14 +19,14 @@ public class elevator : MonoBehaviour
         ToBottom();
     }
 
-    private void ToTop()
+    public void ToTop()
     {
         while (blockSelf.transform.position.y < maxHight)
         {
             blockSelf.transform.position = new Vector3(0, 1, 0) + blockSelf.transform.position;
         }
     }
-    private void ToBottom()
+    public void ToBottom()
     {
         while (blockSelf.transform.position.y > lowerPoint)
         {
